@@ -13,5 +13,5 @@ A small hangman game where the languages HTML, CSS, Js, React, TypeScript, Node.
   - TypeScript
 
 # 🧠 What I Learned
-  - I learned React. My first project made with React
-  - I learned Tailwind. My first project made with Tailwind CSS
+  - I learned React. My first project made with React.
+  - I learned Tailwind. My first project made with Tailwind CSS.

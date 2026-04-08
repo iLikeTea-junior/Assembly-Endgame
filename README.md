@@ -1,6 +1,6 @@
 # 🎮 Assembly-Endgame
 
-A small hangman game where the languages HTML, CSS, Js, React, TypeScript, Node.js, Python, Ruby, Assembly are at stake. Try to keep these languages save before Assembly, or else we are all forced to learn Assembly.
+A small hangman game where the languages HTML, CSS, Js, React, TypeScript, Node.js, Python, Ruby, Assembly are at stake. Try to keep these languages safe before Assembly, or else we are all forced to learn Assembly.
 
 *More updates and features are coming soon (No live link yet)*
 

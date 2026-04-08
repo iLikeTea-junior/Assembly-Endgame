@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    @apply m-0 bg-[#262626] text-[#D9D9D9] p-5 h-screen
+}
+
+main {
+    @apply flex flex-col items-center
+}
+
+header > h1 {
+    @apply text-[1.25rem] font-medium text-[#F9F4DA]
+}
+
+header > p {
+    @apply text-[0.875rem] max-w-87.5 text-[#8E8E8E]
+}
+
+section.game-status {
+    @apply flex flex-col items-center justify-center text-[#F9F4DA] w-full max-w-87.5 min-h-15 rounded my-8;
+}
+
+section.game-status.won {
+    background-color: #10A95B;
+}
+
+section.game-status.lost {
+    background-color: #BA2A2A;
+}
+
+section.game-status.farewell {
+    background-color: #7A5EA7;
+    border: 1px dashed #323232;
+}
+
+section.game-status > p {
+    margin: 5px;
+}
+
+section.game-status > p.farewell-message {
+    font-style: italic;
+    font-weight: 400;
+}
+
+section.game-status > h2 {
+    font-size: 1.25rem;
+    margin: 5px
+}
+
+section.language-chips {
+    @apply flex flex-wrap gap-1.25 justify-center max-w-87.5 mb-9 
+}
+
+span.chip {
+    @apply rounded-[3px] p-[4.5px] relative
+}
+
+/* Dimmed overlay with skull on "lost" languages */
+span.chip.lost::before {
+    content: "💀";
+    @apply absolute flex items-center justify-center h-full w-full text-[0.85rem] top-0 left-0 bg-black/70;
+}
+
+section.word {
+    @apply flex justify-center gap-0.5 mb-5
+}
+
+section.word > span {
+    @apply h-10 w-10 bg-[#323232] flex justify-center items-center text-[1.125rem] border-b  border-[#F9F4DA] 
+}
+
+section.word > span.missed-letter {
+    color: #EC5D49;
+}
+
+section.keyboard {
+    @apply flex flex-wrap gap-2 justify-center max-w-112.5 mb-9 text-black/70
+}
+
+section.keyboard > button {
+    @apply h-8.75 w-8.75 bg-[#FCBA29] border border-[#D7D7D7] rounded-[3px] cursor-pointer
+}
+
+section.keyboard > button.correct {
+    background-color: #10A95B;
+}
+
+section.keyboard > button.wrong {
+    background-color: #EC5D49;
+}
+
+section.keyboard > button:disabled {
+    @apply cursor-not-allowed opacity-[0.5]
+}
+
+button.new-game {
+    @apply bg-[#11B5E5] border border-[#D7D7D7] rounded-sm w-56.25 h-10 pt-1.5 pb-3 block mx-auto cursor-pointer
+}
+
+.sr-only {
+    clip: rect(0, 0, 0, 0);
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0 
+}

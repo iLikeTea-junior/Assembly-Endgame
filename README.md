@@ -15,3 +15,9 @@ A small hangman game where the languages HTML, CSS, Js, React, TypeScript, Node.
 # 🧠 What I Learned
   - I learned React. My first project made with React.
   - I learned Tailwind. My first project made with Tailwind CSS.
+
+
+# Assembly Game Preview
+
+https://github.com/user-attachments/assets/42172e2c-a490-4675-bf91-ce377c828504
+
